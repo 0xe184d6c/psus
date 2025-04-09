@@ -58,3 +58,12 @@ Trading: User submits order → server validates funds → updates user portfoli
 
 Settlement: Oracle retrieves official NAV → system identifies winning contract → processes payouts to holders → notifies users
 ```
+### APP BASICS
+1. Auth (signup, login, logout)
+2. Database (store user actions)
+3. Payments (get paid)
+4. Security (protect your data)
+5. Frontend (UI/UX)
+6. Backend (APIs and logic)
+7. Notifications (email, push)
+8. Analytics (track usage)
