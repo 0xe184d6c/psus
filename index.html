@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV Prediction Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PSUS NAV Prediction</h1>
+        <p>Resolution Date: December 31, 2025</p>
+        <div class="contracts">
+            <div class="contract" id="contract-a">
+                <h3>NAV Below $20</h3>
+                <p class="price">Price: $<span class="price-value">0.15</span></p>
+                <p class="implied">Probability: <span class="probability">15%</span></p>
+                <input type="number" id="quantity-a" min="1" value="1">
+                <button class="buy" onclick="trade('a', 'buy')">Buy</button>
+                <button class="sell" onclick="trade('a', 'sell')">Sell</button>
+            </div>
+            <div class="contract" id="contract-b">
+                <h3>NAV $20-$22</h3>
+                <p class="price">Price: $<span class="price-value">0.20</span></p>
+                <p class="implied">Probability: <span class="probability">20%</span></p>
+                <input type="number" id="quantity-b" min="1" value="1">
+                <button class="buy" onclick="trade('b', 'buy')">Buy</button>
+                <button class="sell" onclick="trade('b', 'sell')">Sell</button>
+            </div>
+            <div class="contract" id="contract-c">
+                <h3>NAV $22-$24</h3>
+                <p class="price">Price: $<span class="price-value">0.25</span></p>
+                <p class="implied">Probability: <span class="probability">25%</span></p>
+                <input type="number" id="quantity-c" min="1" value="1">
+                <button class="buy" onclick="trade('c', 'buy')">Buy</button>
+                <button class="sell" onclick="trade('c', 'sell')">Sell</button>
+            </div>
+            <div class="contract" id="contract-d">
+                <h3>NAV $24-$26</h3>
+                <p class="price">Price: $<span class="price-value">0.20</span></p>
+                <p class="implied">Probability: <span class="probability">20%</span></p>
+                <input type="number" id="quantity-d" min="1" value="1">
+                <button class="buy" onclick="trade('d', 'buy')">Buy</button>
+                <button class="sell" onclick="trade('d', 'sell')">Sell</button>
+            </div>
+            <div class="contract" id="contract-e">
+                <h3>NAV Above $26</h3>
+                <p class="price">Price: $<span class="price-value">0.20</span></p>
+                <p class="implied">Probability: <span class="probability">20%</span></p>
+                <input type="number" id="quantity-e" min="1" value="1">
+                <button class="buy" onclick="trade('e', 'buy')">Buy</button>
+                <button class="sell" onclick="trade('e', 'sell')">Sell</button>
+            </div>
+        </div>
+        <div class="portfolio">
+            <h2>Your Portfolio</h2>
+            <p>Balance: $<span id="balance">1000.00</span></p>
+            <div id="holdings"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
